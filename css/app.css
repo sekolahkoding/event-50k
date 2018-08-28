@@ -1,0 +1,276 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/*          font-family: 'Russo One', sans-serif, !important;
+            font-family: 'Varela Round', sans-serif;
+            font-family: 'Fredoka One', cursive;
+            font-family: 'Amaranth', sans-serif;*/
+
+#fullpage {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*social media section styles*/
+.social {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+#deteksi-mouseOver {
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    height: 50%;
+    width: 100%;
+    background-color: white;    
+    color: black;
+}
+
+.social .container {
+    display: flex;
+    height: 40%;
+    width: 80% !important;
+    justify-content: space-around;
+}
+
+#text-1, #text-2, #kata-1, #about-1 {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1em;
+}
+
+#text-1 {
+    font-size: 90px;
+}
+
+#text-2 {
+    font-size: 40px;
+    position: relative;
+    margin: 0 0 5% 0;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    height: 100%;
+    width: 22.5%;
+    margin:20px auto;
+    max-height: 200px;
+    border-radius: 15px;
+    text-decoration:none;
+    transition:all 0.3s ease;
+}
+
+.icons:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+
+}
+
+#Youtube {
+    background-color: #dc472e;
+}
+
+#Twitter {
+    background-color: #50abf1;
+}
+
+#Facebook {
+    background-color: #3a549f;
+}
+
+#Instagram {
+    background-color: #c536a4;
+}
+.sosmed-text{ 
+    font-size: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+    color: white;
+}
+
+.subscribers {
+    font-size: 50px;
+    padding-top: 6px;
+}
+
+@media only screen and (max-width: 500px) {
+    .icons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        height: 100%;
+        width: 45%;
+        max-height: 75px;
+        border-radius: 8px;
+        text-decoration:none;
+        transition:all 0.3s ease;
+    }
+    #text-1 {
+        font-size: 40px;
+    }
+
+    #text-2 {
+        font-size: 20px;
+        position: relative;
+        margin: 3% 0 16% 0;
+    }
+    .name {
+        font-size: 18px;
+    }
+    .subscribers {
+        font-size: 25px;
+        padding-top: 6px;
+    }
+
+}
+
+.sepatah-kata{
+
+    background: #32365b; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#32365b, #314b68); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#32365b, #314b68); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#32365b, #314b68); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#32365b, #314b68); /* Standard syntax */
+    color: white;
+    text-align: justify;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.sepatah-kata .title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 80px;
+}
+#kata-kata {
+    line-height: 1.5;
+    font-size: 3.5vh;
+    margin: 50px 0 30px 0;
+}
+
+.sepatah-kata a {
+    height: 150px;
+    width: 150px;
+    margin: 0;
+}
+
+#link-foto {
+    float: left;
+    margin-right: 10px;
+}
+
+#link-nama {
+    color: white;
+}
+
+.sepatah-kata img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+@media only screen and (min-width: 1400px) { 
+    /*untuk layar full hd*/
+    .sepatah-kata .title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 80px;
+    }
+
+    #kata-kata {
+        line-height: 1.25;
+        font-size: 3.5vh;
+    }
+
+    .sepatah-kata a {
+        height: 200px;
+        width: 200px;
+        margin: 0;
+    }
+
+    #link-foto {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .sepatah-kata img {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    .sepatah-kata .container {
+        width: 85%;
+    }
+    .sepatah-kata .title {
+        text-align: center;
+        font-size: 35px;
+        margin-top:150px;
+        margin-bottom: 20px;
+    }
+    #kata-kata {
+        line-height: 1.1;
+        font-size: 2.9vh;
+        margin: 20px 0 15px 0;
+    }
+
+    #link-foto {
+        display: none;
+    }
+}
+
+.about .container {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2vw;
+    margin-bottom: 40px;
+    line-height: 2;
+}
+
+.about a {
+    color: black;
+}
+
+@media only screen and (max-width: 500px) {
+    .about .container {
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+    .sepatah-kata .title {
+        text-align: center;
+        font-size: 35px;
+        margin-top:10px;
+        margin-bottom: 20px;
+    }
+
+}

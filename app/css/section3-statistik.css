@@ -1,0 +1,79 @@
+/*chart section styles*/
+.chart {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #1b2735; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#1b2735, #9e6a7d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1b2735, #9e6a7d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1b2735, #9e6a7d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1b2735, #9e6a7d); /* Standard syntax */
+}
+
+.chart .container {
+}
+
+.chart-title {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 80px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.statistik {
+    position: relative;
+    margin: auto; 
+    height: 40%; 
+    width: 80%;
+    align-self: center;
+}
+
+.statistik-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .chart {
+        display: flex;
+        position: absolute;
+        background: #1b2735; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#1b2735, #9e6a7d); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#1b2735, #9e6a7d); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#1b2735, #9e6a7d); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#1b2735, #9e6a7d); /* Standard syntax */
+    }
+
+    .chart .container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding-top: 25%;
+    }
+
+    .chart-title {
+        text-align: center;
+        position: relative;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 30px;
+        color: white;
+        margin: 40px auto;
+        width: 100%;
+    }
+
+    .statistik {
+        display: none;
+    }
+
+
+    .statistik-mobile {
+        display: block;
+        position: relative;
+        margin: auto; 
+        height:45%; 
+        width:80%;
+        align-self: center;
+    }
+}

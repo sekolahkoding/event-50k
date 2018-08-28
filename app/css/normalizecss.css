@@ -1,0 +1,15 @@
+/*normalie css*/
+
+/*title font size semuanya sama */
+.title {
+	font-size: 90px;
+}
+
+
+@media only screen and (max-width: 500px) {
+	.title {
+		font-size: 40px;
+	}
+
+
+}
